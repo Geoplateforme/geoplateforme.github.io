@@ -1,0 +1,32 @@
+:root {
+    --geoplateforme-color: #3993f3; 
+    --md-accent-fg-color: var(--geoplateforme-color);
+}
+
+[data-md-color-primary="white"] {
+    --md-typeset-a-color: var(--geoplateforme-color);
+}
+
+[data-md-color-scheme="default"] {
+    --md-footer-bg-color: white;
+    --md-footer-fg-color: var(--geoplateforme-color);
+}
+
+.md-typeset h1 {
+    color: var(--geoplateforme-color);
+    font-weight: bolder;
+}
+
+.md-nav__item .md-nav__link--active {
+    color: var(--geoplateforme-color);
+}
+
+.md-header__topic {
+    color: var(--geoplateforme-color);
+    font-weight: bolder;
+}
+
+.md-tabs__link--active, .md-tabs__link:focus, .md-tabs__link:hover {
+    color: var(--geoplateforme-color);
+    font-weight: bolder;
+}

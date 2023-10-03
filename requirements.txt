@@ -1,0 +1,6 @@
+mkdocs-material>=9.1,<10
+mkdocs-mermaid2-plugin
+mkdocs-macros-plugin
+mkdocs-render-swagger-plugin
+mkdocs-video
+neoteroi-mkdocs

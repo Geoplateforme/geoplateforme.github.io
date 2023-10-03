@@ -1,0 +1,49 @@
+site_name: Documentation Géoplateforme
+use_directory_urls: True
+
+theme:
+    name: material
+    language: fr
+    palette:
+        primary: white
+        accent: custom
+    logo: assets/images/logo.png
+    favicon: assets/images/favicon.ico
+
+markdown_extensions:
+    - attr_list
+    - md_in_html
+    - neoteroi.cards
+    - pymdownx.emoji:
+          emoji_index: !!python/name:materialx.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.highlight:
+          anchor_linenums: true
+          line_spans: __span
+          pygments_lang_class: true
+    - pymdownx.tabbed:
+          alternate_style: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.details
+    - pymdownx.superfences:
+          custom_fences:
+              - name: mermaid
+                class: mermaid
+                format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_css:
+    - assets/css/extra.css
+    - assets/css/neoteroi.css
+
+plugins:
+    - search
+    - macros
+    - render_swagger
+    - mkdocs-video:
+        is_video: True
+        video_muted: True
+        video_autoplay: False
+
+extra:
+    homepage: https://geoplateforme.github.io

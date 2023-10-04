@@ -3,6 +3,10 @@
     --md-accent-fg-color: var(--geoplateforme-color);
 }
 
+.nt-card-title {
+    text-align: center;
+}
+
 [data-md-color-primary="white"] {
     --md-typeset-a-color: var(--geoplateforme-color);
 }

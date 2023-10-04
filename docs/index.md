@@ -18,7 +18,7 @@ Retrouvez ici toute les documentations techniques liées à la Géoplateforme.
   url: https://ign.fr/geoplateforme/la-geoplateforme-en-bref
 
 - title: L'Entrepôt Géoplateforme
-  content: Quelles en sont les briques, les concepts...
+  content: Quelles en sont les briques, les concepts, les spécifications...
   image: ./assets/cards/entrepot.png
   url: https://geoplateforme.github.io/entrepot
 

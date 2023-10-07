@@ -1,0 +1,32 @@
+name: 🆕 Ajout d'une nouvelle documentation 📚
+description: Demande d'ajout d'un nouveau cas d'usage dans la documentation
+labels: ["enhancement","documentation"]
+projects: ["Geoplateforme/1"]
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        Vous pouvez proposer la documentation pas à pas d'un nouveau cas d'usage via une pull request sur le dépôt de documentation
+
+  - type: dropdown
+    id: thematic
+    attributes:
+      label: Type de données
+      description: Quel type de donnée est manipulé dans le cas d'usage à ajouter
+      options:
+        - Vecteur
+        - Raster
+        - Archive
+        - Graphe navigable
+        - Index de recherche
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description du cas d'usage
+      description: Quel est l'objectif final du cas d'usage et quelles sont les étapes pour y arriver (livraison, traitement, publication, dépôt d'annexes...)
+    validations:
+      required: true

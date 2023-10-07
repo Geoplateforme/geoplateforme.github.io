@@ -1,0 +1,170 @@
+name: 🚀 Modification de l'API ↔️
+description: Proposition d'une modification du fonctionnement de l'API
+labels: ["enhancement","api"]
+projects: ["Geoplateforme/1"]
+body:
+
+  - type: dropdown
+    id: entity
+    attributes:
+      label: Entité(s) concernée(s)
+      description: Quelle sont les entités concernées par la modification
+      multiple: true
+      options:
+        - access
+        - annexe
+        - check
+        - check execution
+        - community
+        - configuration
+        - datastore
+        - endpoint
+        - key
+        - metadata
+        - offering
+        - permission
+        - processing
+        - processing execution
+        - static
+        - storage
+        - stored data
+        - tms
+        - upload
+        - user
+    validations:
+      required: true
+
+  - type: dropdown
+    id: path
+    attributes:
+      label: Route API concernée
+      description: Si la modification concerne une route en particulier, quelle est-elle (optionnel)
+      options:
+        - /administrator/checks
+        - /administrator/checks/executions/{execution}/logs
+        - /administrator/checks/{check}
+        - /administrator/communities
+        - /administrator/communities/{community}
+        - /administrator/datastores
+        - /administrator/datastores/{datastore}
+        - /administrator/endpoints
+        - /administrator/endpoints/{endpoint}
+        - /administrator/processings
+        - /administrator/processings/executions/{execution}/logs
+        - /administrator/processings/{processing}
+        - /administrator/storages
+        - /administrator/storages/{storage}
+        - /catalogs/communities
+        - /catalogs/offerings
+        - /catalogs/uploads
+        - /communities/{community}
+        - /communities/{community}/clients
+        - /communities/{community}/permissions
+        - /communities/{community}/permissions/{permission}
+        - /communities/{community}/permissions/{permission}/users
+        - /communities/{community}/users
+        - /communities/{community}/users/{user}
+        - /datastores/{datastore}
+        - /datastores/{datastore}/annexes
+        - /datastores/{datastore}/annexes/publication
+        - /datastores/{datastore}/annexes/unpublication
+        - /datastores/{datastore}/annexes/{annex}
+        - /datastores/{datastore}/annexes/{annex}/file
+        - /datastores/{datastore}/checks
+        - /datastores/{datastore}/checks/executions
+        - /datastores/{datastore}/checks/executions/{execution}
+        - /datastores/{datastore}/checks/executions/{execution}/logs
+        - /datastores/{datastore}/checks/{check}
+        - /datastores/{datastore}/configurations
+        - /datastores/{datastore}/configurations/{configuration}
+        - /datastores/{datastore}/configurations/{configuration}/comments
+        - /datastores/{datastore}/configurations/{configuration}/comments/{comment}
+        - /datastores/{datastore}/configurations/{configuration}/events
+        - /datastores/{datastore}/configurations/{configuration}/offerings
+        - /datastores/{datastore}/configurations/{configuration}/tags
+        - /datastores/{datastore}/metadata
+        - /datastores/{datastore}/metadata/publication
+        - /datastores/{datastore}/metadata/unpublication
+        - /datastores/{datastore}/metadata/{metadata}
+        - /datastores/{datastore}/metadata/{metadata}/file
+        - /datastores/{datastore}/offerings
+        - /datastores/{datastore}/offerings/{offering}
+        - /datastores/{datastore}/offerings/{offering}/sharings
+        - /datastores/{datastore}/permissions
+        - /datastores/{datastore}/permissions/{permission}
+        - /datastores/{datastore}/processings
+        - /datastores/{datastore}/processings/executions
+        - /datastores/{datastore}/processings/executions/{execution}
+        - /datastores/{datastore}/processings/executions/{execution}/abort
+        - /datastores/{datastore}/processings/executions/{execution}/launch
+        - /datastores/{datastore}/processings/executions/{execution}/logs
+        - /datastores/{datastore}/processings/{processing}
+        - /datastores/{datastore}/statics
+        - /datastores/{datastore}/statics/{static}
+        - /datastores/{datastore}/statics/{static}/file
+        - /datastores/{datastore}/stored_data
+        - /datastores/{datastore}/stored_data/{stored_data}
+        - /datastores/{datastore}/stored_data/{stored_data}/comments
+        - /datastores/{datastore}/stored_data/{stored_data}/comments/{comment}
+        - /datastores/{datastore}/stored_data/{stored_data}/dependencies
+        - /datastores/{datastore}/stored_data/{stored_data}/events
+        - /datastores/{datastore}/stored_data/{stored_data}/sharings
+        - /datastores/{datastore}/stored_data/{stored_data}/tags
+        - /datastores/{datastore}/uploads
+        - /datastores/{datastore}/uploads/{upload}
+        - /datastores/{datastore}/uploads/{upload}/checks
+        - /datastores/{datastore}/uploads/{upload}/close
+        - /datastores/{datastore}/uploads/{upload}/comments
+        - /datastores/{datastore}/uploads/{upload}/comments/{comment}
+        - /datastores/{datastore}/uploads/{upload}/data
+        - /datastores/{datastore}/uploads/{upload}/events
+        - /datastores/{datastore}/uploads/{upload}/md5
+        - /datastores/{datastore}/uploads/{upload}/open
+        - /datastores/{datastore}/uploads/{upload}/sharings
+        - /datastores/{datastore}/uploads/{upload}/tags
+        - /datastores/{datastore}/uploads/{upload}/tree
+        - /statics/tms
+        - /statics/tms/{tms}
+        - /statics/tms/{tms}/file
+        - /users/me
+        - /users/me/communities/{community}
+        - /users/me/keys
+        - /users/me/keys/{key}
+        - /users/me/keys/{key}/accesses
+        - /users/me/keys/{key}/accesses/{access}
+        - /users/me/permissions
+        - /users/me/permissions/{permission}
+    validations:
+      required: false
+
+  - type: dropdown
+    id: method
+    attributes:
+      label: Méthode de la route API
+      description: Si la modification concerne une route en particulier, quelle est la méthode HTTP associée (optionnel)
+      options:
+        - GET
+        - POST
+        - PUT
+        - PATCH
+        - DELETE
+        - HEAD
+        - OPTIONS
+    validations:
+      required: false
+
+  - type: textarea
+    id: actual-behaviour
+    attributes:
+      label: Description détaillée du fonctionnement actuel
+      description: Décrivez le fonctionnement actuel
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: Description détaillée du fonctionnement proposé
+      description: Décrivez le comportement que vous aimeriez avoir (champs en plus, plus de possibilité de filtrage, de tri...)
+    validations:
+      required: true

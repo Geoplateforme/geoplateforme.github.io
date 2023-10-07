@@ -1,0 +1,48 @@
+name: 🐛 Bug dans la documentation 📚
+description: Rapport d'une erreur dans la documentation
+labels: ["bug","documentation"]
+projects: ["Geoplateforme/1"]
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        Vous pouvez proposer votre correction via une pull request sur le dépôt de documentation
+
+  - type: dropdown
+    id: tutorial
+    attributes:
+      label: Tutoriel concerné
+      description: Quel est le tutoriel concerné par l'erreur
+      options:
+        - Gestion vecteur - Alimentation et diffusion simple
+        - Gestion vecteur - Alimentation par mise à jour
+        - Gestion raster - Alimentation et diffusion simple
+        - Gestion raster - Alimentation par mise à jour
+        - Gestion raster - Gestion de données MNT
+        - Gestion d'archives - Alimentation et diffusion simple
+        - Gestion des annexes
+        - Gestion des métadonnées
+        - Authentification - Contrôle des accès à l'API
+        - Authentification - Contrôle des accès aux services de diffusion
+        - Administration - Gestion des membres d'une communauté
+        - Administration - Créer et gérer un espace de travail
+        - Divers - Mise en place d'un groupe thématique de couches
+    validations:
+      required: false
+
+  - type: input
+    id: page
+    attributes:
+      label: Page concernée
+      description: URL de la page de documentation où se trouve l'erreur
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description de l'erreur
+      description: Décrivez la différence entre la documentation et l'implémentation effective (route, corps...)
+    validations:
+      required: true

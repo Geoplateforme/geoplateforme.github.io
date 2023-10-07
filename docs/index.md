@@ -10,7 +10,7 @@ Nouvel espace public de l’information géographique, la Géoplateforme a pour 
 
 Retrouvez ici toute les documentations techniques liées à la Géoplateforme.
 
-::cards::
+::cards:: cols=4
 
 - title: Site institutionnel
   content: La Géoplateforme, c'est quoi ?
@@ -26,5 +26,10 @@ Retrouvez ici toute les documentations techniques liées à la Géoplateforme.
   content: Comment alimenter, traiter et diffuser les données grâce à l'entrepôt Géoplateforme
   image: ./assets/cards/tutoriels.png
   url: https://geoplateforme.github.io/tutoriels
+
+- title: Une remontée à nous faire ?
+  content: Vous rencontrez un bug ? Une documentation erronée ou imprécise ? Vous voulez suggérez un nouveau cas d'usage à documenter ?
+  image: ./assets/cards/issue.png
+  url: https://github.com/Geoplateforme/geoplateforme.github.io/issues/new/choose
 
 ::/cards::

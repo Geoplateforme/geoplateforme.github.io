@@ -1,0 +1,13 @@
+name: 🐛 Bug sur le gestionnaire d'identité 🔐
+description: Rapport d'une erreur de fonctionnement du gestionnaire d'identité Géoplateforme
+labels: ["bug","iam"]
+projects: ["Geoplateforme/1"]
+body:
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description détaillée du bug
+      description: Décrivez le comportement problématique (paramètres et corps de requête, code de retour, corps de réponse...)
+    validations:
+      required: true

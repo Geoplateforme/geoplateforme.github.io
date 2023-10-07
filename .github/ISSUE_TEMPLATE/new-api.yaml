@@ -1,0 +1,68 @@
+name: 🆕 Nouvelle route API ↔️
+description: Proposition d'une nouvelle route API pour ajouter une fonctionnalité ou faciliter l'accès à une déjà existante
+labels: ["enhancement","api"]
+projects: ["Geoplateforme/1"]
+body:
+
+  - type: dropdown
+    id: entity
+    attributes:
+      label: Entité(s) concernée(s)
+      description: Quelle sont les entités concernées par la nouvelle route
+      multiple: true
+      options:
+        - access
+        - annexe
+        - check
+        - check execution
+        - community
+        - configuration
+        - datastore
+        - endpoint
+        - key
+        - metadata
+        - offering
+        - permission
+        - processing
+        - processing execution
+        - static
+        - storage
+        - stored data
+        - tms
+        - upload
+        - user
+    validations:
+      required: true
+
+  - type: dropdown
+    id: method
+    attributes:
+      label: Méthode de la nouvelle route API
+      description: Quel est la méthode HTTP associée à la route (optionnel)
+      options:
+        - GET
+        - POST
+        - PUT
+        - PATCH
+        - DELETE
+        - HEAD
+        - OPTIONS
+    validations:
+      required: false
+
+  - type: input
+    id: path
+    attributes:
+      label: Nouvelle route
+      description: Suggérez le chemin pour cette nouvelle route
+      placeholder: /datastores/{datastore}/permissions/{permission}
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description détaillée de la nouvelle route
+      description: Décrivez le comportement attendu pour cette nouvelle route (paramètres et corps de requête, fonctionnement, codes de retour possibles, corps de réponse...)
+    validations:
+      required: true

@@ -1,4 +1,4 @@
-name: 🚀 Documentation pas assez détaillée 📚
+name: 🚀 Documentation à améliorer
 description: Demande d'ajout d'explications dans la documentation
 labels: ["enhancement","documentation"]
 projects: ["Geoplateforme/1"]
@@ -10,11 +10,13 @@ body:
         Vous pouvez proposer des explications facilitant la compréhension via une pull request sur le dépôt de documentation
 
   - type: dropdown
-    id: tutorial
+    id: documentation
     attributes:
-      label: Tutoriel concerné
-      description: Quel est le tutoriel concerné par la demande de précisions
+      label: Documentation concernée
+      description: Quelle documentation est concernée par la demande de précisions
       options:
+        - Synthèse des concepts de l'entrepôt
+        - Briques applicatives de l'entrepôt
         - Gestion vecteur - Alimentation et diffusion simple
         - Gestion vecteur - Alimentation par mise à jour
         - Gestion raster - Alimentation et diffusion simple

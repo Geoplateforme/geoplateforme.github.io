@@ -1,6 +1,6 @@
-name: 🚀 Modification de l'API ↔️
-description: Proposition d'une modification du fonctionnement de l'API
-labels: ["enhancement","api"]
+name: 🐛 Bug sur l'API Entrepôt
+description: Rapport d'une erreur de fonctionnement de l'API Entrepôt Géoplateforme
+labels: ["bug","api"]
 projects: ["Geoplateforme/1"]
 body:
 
@@ -8,7 +8,7 @@ body:
     id: entity
     attributes:
       label: Entité(s) concernée(s)
-      description: Quelle sont les entités concernées par la modification
+      description: Quelle sont les entités concernées par le bug
       multiple: true
       options:
         - access
@@ -38,7 +38,7 @@ body:
     id: path
     attributes:
       label: Route API concernée
-      description: Si la modification concerne une route en particulier, quelle est-elle (optionnel)
+      description: Sur quelle route le bug apparaît (optionnel)
       options:
         - /administrator/checks
         - /administrator/checks/executions/{execution}/logs
@@ -141,7 +141,7 @@ body:
     id: method
     attributes:
       label: Méthode de la route API
-      description: Si la modification concerne une route en particulier, quelle est la méthode HTTP associée (optionnel)
+      description: Quelle est la méthode HTTP associée à la route (optionnel)
       options:
         - GET
         - POST
@@ -154,17 +154,9 @@ body:
       required: false
 
   - type: textarea
-    id: actual-behaviour
+    id: description
     attributes:
-      label: Description détaillée du fonctionnement actuel
-      description: Décrivez le fonctionnement actuel
-    validations:
-      required: true
-
-  - type: textarea
-    id: expected-behaviour
-    attributes:
-      label: Description détaillée du fonctionnement proposé
-      description: Décrivez le comportement que vous aimeriez avoir (champs en plus, plus de possibilité de filtrage, de tri...)
+      label: Description détaillée du bug
+      description: Décrivez le comportement problématique (paramètres et corps de requête, code de retour, corps de réponse...)
     validations:
       required: true

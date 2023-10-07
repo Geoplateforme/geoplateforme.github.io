@@ -1,0 +1,43 @@
+name: 🐛 Bug d'un service de diffusion
+description: Rapport d'une erreur au niveau d'un service de diffusion, de données, d'annexes ou de métadonnées
+labels: ["bug","broadcast"]
+projects: ["Geoplateforme/1"]
+body:
+
+  - type: dropdown
+    id: diffusion
+    attributes:
+      label: Type de diffusion concernée
+      description: Quel type de service de diffusion est concerné
+      options:
+        - Service WMTS / TMS
+        - Service WMS Raster
+        - Service WMS Vecteur
+        - Service WFS
+        - Service de téléchargement
+        - Service de recherche
+        - Service d'altimétrie
+        - Service de calcul d'itinéraire / isochrone
+        - Service de diffusion des annexes
+        - Catalogue de métadonnées
+    validations:
+      required: true
+
+  - type: dropdown
+    id: access
+    attributes:
+      label: Accès concerné
+      description: Quel est le type d'accès du service concerné
+      options:
+        - Ouvert
+        - Restreint (/private/...)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description de l'erreur
+      description: Décrivez l'erreur rencontrée, avec un exemple de requête en échec et la réponse
+    validations:
+      required: true

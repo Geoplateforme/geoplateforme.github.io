@@ -1,4 +1,4 @@
-name: 🐛 Bug sur le gestionnaire d'identité 🔐
+name: 🐛 Bug sur le gestionnaire d'identité
 description: Rapport d'une erreur de fonctionnement du gestionnaire d'identité Géoplateforme
 labels: ["bug","iam"]
 projects: ["Geoplateforme/1"]

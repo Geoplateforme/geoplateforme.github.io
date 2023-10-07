@@ -1,4 +1,4 @@
-name: 🆕 Ajout d'une nouvelle documentation 📚
+name: 🆕 Ajout d'une nouvelle documentation
 description: Demande d'ajout d'un nouveau cas d'usage dans la documentation
 labels: ["enhancement","documentation"]
 projects: ["Geoplateforme/1"]
@@ -12,14 +12,14 @@ body:
   - type: dropdown
     id: thematic
     attributes:
-      label: Type de données
-      description: Quel type de donnée est manipulé dans le cas d'usage à ajouter
+      label: Type de documentation
+      description: Quel type de documentation faudrait-il ajouter ?
       options:
-        - Vecteur
-        - Raster
-        - Archive
-        - Graphe navigable
-        - Index de recherche
+        - Tutoriel vecteur
+        - Tutoriel raster
+        - Tutoriel archive
+        - Tutoriel Graphe navigable
+        - Tutoriel Index de recherche
     validations:
       required: false
 

@@ -1,7 +1,6 @@
 name: 🐛 Bug d'un service de diffusion
 description: Rapport d'une erreur au niveau d'un service de diffusion, de données, d'annexes ou de métadonnées
 labels: ["bug","broadcast"]
-projects: ["Geoplateforme/1"]
 body:
 
   - type: dropdown

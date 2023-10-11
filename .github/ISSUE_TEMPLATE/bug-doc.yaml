@@ -1,7 +1,6 @@
 name: 🐛 Bug dans la documentation
 description: Rapport d'une erreur dans la documentation
 labels: ["bug","documentation"]
-projects: ["Geoplateforme/1"]
 body:
 
   - type: markdown

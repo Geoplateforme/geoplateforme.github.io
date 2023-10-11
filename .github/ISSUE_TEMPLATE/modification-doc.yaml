@@ -1,7 +1,6 @@
 name: 🚀 Documentation à améliorer
 description: Demande d'ajout d'explications dans la documentation
 labels: ["enhancement","documentation"]
-projects: ["Geoplateforme/1"]
 body:
 
   - type: markdown

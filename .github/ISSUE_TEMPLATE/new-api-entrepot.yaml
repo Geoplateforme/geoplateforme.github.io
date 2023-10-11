@@ -1,7 +1,6 @@
 name: 🆕 Nouvelle route API Entrepôt
 description: Proposition d'une nouvelle route API pour ajouter une fonctionnalité ou faciliter l'accès à une déjà existante
 labels: ["enhancement","api"]
-projects: ["Geoplateforme/1"]
 body:
 
   - type: dropdown

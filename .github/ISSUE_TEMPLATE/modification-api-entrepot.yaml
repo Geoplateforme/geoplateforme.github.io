@@ -1,7 +1,6 @@
 name: 🚀 Modification de l'API Entrepôt
 description: Proposition d'une modification du fonctionnement de l'API
 labels: ["enhancement","api"]
-projects: ["Geoplateforme/1"]
 body:
 
   - type: dropdown

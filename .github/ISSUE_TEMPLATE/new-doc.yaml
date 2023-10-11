@@ -1,7 +1,6 @@
 name: 🆕 Ajout d'une nouvelle documentation
 description: Demande d'ajout d'un nouveau cas d'usage dans la documentation
 labels: ["enhancement","documentation"]
-projects: ["Geoplateforme/1"]
 body:
 
   - type: markdown

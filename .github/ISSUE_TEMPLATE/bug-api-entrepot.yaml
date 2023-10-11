@@ -1,7 +1,6 @@
 name: 🐛 Bug sur l'API Entrepôt
 description: Rapport d'une erreur de fonctionnement de l'API Entrepôt Géoplateforme
 labels: ["bug","api"]
-projects: ["Geoplateforme/1"]
 body:
 
   - type: dropdown

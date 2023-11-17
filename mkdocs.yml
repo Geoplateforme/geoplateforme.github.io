@@ -46,4 +46,4 @@ plugins:
         video_autoplay: False
 
 extra:
-    homepage: https://geoplateforme.github.io
+    homepage: https://www.ign.fr/geoplateforme

@@ -28,7 +28,7 @@ Retrouvez ici toute les documentations techniques liées à la Géoplateforme.
   url: https://geoplateforme.github.io/tutoriels
 
 - title: Une remontée à nous faire ?
-  content: Vous rencontrez un bug ? Une documentation erronée ou imprécise ? Vous voulez suggérez un nouveau cas d'usage à documenter ?
+  content: Vous rencontrez un bug ? Une documentation erronée ou imprécise ? Vous voulez suggérer un nouveau cas d'usage à documenter ?
   image: ./assets/cards/issue.png
   url: https://github.com/Geoplateforme/geoplateforme.github.io/issues/new/choose
 

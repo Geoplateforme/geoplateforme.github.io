@@ -1,6 +1,13 @@
 site_name: Documentation Géoplateforme
 use_directory_urls: True
 
+nav:
+  - Accueil: https://geoplateforme.github.io
+  - Entrepôt: https://geoplateforme.github.io/entrepot
+  - SDK python: https://geoplateforme.github.io/sdk-entrepot
+  - Tutoriels: https://geoplateforme.github.io/tutoriels
+  - Une remontée ?: https://github.com/Geoplateforme/geoplateforme.github.io/issues/new/choose
+
 theme:
     name: material
     language: fr

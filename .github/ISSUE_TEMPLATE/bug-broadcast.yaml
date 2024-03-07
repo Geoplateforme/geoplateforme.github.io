@@ -17,6 +17,7 @@ body:
         - Service de recherche
         - Service d'altimétrie
         - Service de calcul d'itinéraire / isochrone
+        - Service de géocodage
         - Service de diffusion des annexes
         - Catalogue de métadonnées
     validations:

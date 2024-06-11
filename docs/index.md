@@ -15,7 +15,7 @@ Retrouvez ici toute les documentations techniques liées à la Géoplateforme.
 - title: Site institutionnel
   content: La Géoplateforme, c'est quoi ?
   image: ./assets/cards/officiel.png
-  url: https://ign.fr/geoplateforme/la-geoplateforme-en-bref
+  url: https://www.ign.fr/geoplateforme/la-geoplateforme-en-bref
 
 - title: L'Entrepôt Géoplateforme
   content: Quelles en sont les briques, les concepts, les spécifications...
